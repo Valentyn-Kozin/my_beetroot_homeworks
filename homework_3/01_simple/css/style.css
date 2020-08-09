@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 1em;
+}
+
+main {
+  font-size: 20px;
+}
+
+header {
+  text-align: center;
+  margin: 1em 0 1em 0;
+}
+
+.title {
+  background-color: #a52a2a;
+}
+
+.header_img {
+  display: inline-block;
+  min-width: 100%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic_blue_bold {
+  font-style: italic;
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.car_list {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  border: 5px dashed #000000;
+}
+
+.blue {
+  color: #0000ff;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #000000;
+  font-size: 20px;
+}
