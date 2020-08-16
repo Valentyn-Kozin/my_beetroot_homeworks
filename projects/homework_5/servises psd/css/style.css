@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+:root {
+  --hover-color: #1275b9;
+  --text-size: 14px;
+  --unhover-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  min-height: 100vh;
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+li {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+}
+
+li:nth-child(2) {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: 1px solid var(--hover-color);
+  background-color: var(--hover-color);
+  margin-bottom: 20px;
+}
+
+svg {
+  fill: #ffffff;
+  fill-rule: evenodd;
+}
+
+.shape:hover {
+  background-color: var(--unhover-color);
+  transition: 0.2s ease;
+}
+
+.shape:hover svg {
+  fill: var(--hover-color);
+}
+
+h3 {
+  font-family: "ProximaNova-Regular", serif;
+  font-size: var(--text-size);
+  margin-bottom: 22px;
+}
+
+p {
+  font-family: "ProximaNova-Light", serif;
+  font-size: var(--text-size);
+}
