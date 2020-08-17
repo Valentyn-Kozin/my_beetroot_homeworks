@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
+  margin: 0;
   padding: 0px;
   box-sizing: border-box;
 }
@@ -38,15 +39,21 @@ h3 {
   margin-bottom: 12px;
 }
 
-hr {
+.line {
+  height: 2px;
+  width: 231px;
   margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+ul {
+  margin-bottom: 74px;
 }
 
 li {
   list-style-type: none;
   display: inline-block;
   margin-right: 25px;
-  margin-bottom: 74px;
 }
 
 li:last-child {
