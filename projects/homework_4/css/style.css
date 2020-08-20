@@ -32,18 +32,23 @@ footer {
   margin-bottom: 31px;
 }
 
+.logo-img a {
+  display: inline-block;
+}
+
 h3 {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
-.line {
-  height: 2px;
-  width: 231px;
-  margin-bottom: 20px;
-  background-color: #ffffff;
+h3::after {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
 }
 
 ul {
