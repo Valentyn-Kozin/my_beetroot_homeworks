@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url("../accets/TrebuchetMS.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TrbuchetMS", Trebuchet, Arial, sans-serif;
+  font-size: 100%;
+  min-height: 100vh;
+  border: 24px solid white;
+  background-color: #3b3f45;
+  line-height: 1.2;
+}
+
+header {
+  text-align: center;
+  color: #eb7e7f;
+  height: 6em;
+  background-color: #4a4f56;
+  margin-bottom: 2em;
+  padding: 15px 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+form {
+  max-width: 700px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  background-color: #88839e;
+  color: #f9f9f9;
+  margin-bottom: 2em;
+}
+
+li {
+  height: 64px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  padding: 5px;
+}
+
+li:nth-child(even) {
+  background-color: #7a7593;
+}
+
+label {
+  padding: 0 0 0 5px;
+  display: block;
+  cursor: pointer;
+}
+
+input {
+  display: inline-block;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+}
+
+li:hover {
+  background-color: #625e77;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+li:active {
+  background-color: #eb7773;
+}
+
+.text {
+  font-size: 24px;
+  display: inline-block;
+}
+
+.small-text {
+  font-size: 16px;
+  color: #cdc6c6;
+}
+
+.small-text::before {
+  content: "(";
+}
+
+.small-text::after {
+  content: ")";
+}
+
+button {
+  text-align: center;
+  color: #eb7e7f;
+  height: 6em;
+  background-color: #4a4f56;
+  margin-bottom: 2em;
+  align-self: center;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
