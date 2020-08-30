@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans&display=swap");
+:root {
+  /* font-family */
+  --title-font: "Montserrat", sans-serif;
+  --main-font: "PT Sans", sans-serif;
+  /* colors */
+  --pretitle-color: #898f99;
+  --blue: #0ec8cb;
+  --main-text-color: #999999;
+  --list-title-color: #1b1b1b;
+  --list-text-color: #777777;
+  --list-active-text-color: #ffffff;
+  --list-background: #f7f7f7;
+  /* font-sizes */
+  --pre-title-size: 12px;
+  --title-size: 48px;
+  --main-text-size: 18px;
+  --list-title-size: 16px;
+  --list-text-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease;
+}
+html,
+body {
+  min-height: 100vh;
+  font-size: 100%;
+}
+body {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  text-align: center;
+  display: block;
+  margin-bottom: 107px;
+}
+.pre-title {
+  font-size: var(--pre-title-size);
+  color: var(--pretitle-color);
+  font-family: var(--title-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+.title {
+  font-size: var(--title-size);
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  color: var(--blue);
+  letter-spacing: 1px;
+  margin-bottom: 44px;
+}
+.main-text {
+  max-width: 513px;
+  font-size: var(--main-text-size);
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.list-wrapper {
+  text-align: center;
+  max-width: 940px;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+.list-item {
+  display: inline-block;
+  max-width: 25%;
+  text-align: center;
+  background-color: var(--list-background);
+}
+.list-item a {
+  max-width: 100%;
+  max-height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.icon-wrapper {
+  margin: 50px 0;
+}
+.icon {
+  max-height: 65px;
+  max-width: 65px;
+  fill: var(--list-title-color);
+  text-align: center;
+}
+.list-title {
+  font-family: var(--title-font);
+  font-size: var(--list-title-size);
+  color: var(--list-title-color);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.list-text {
+  font-family: var(--main-font);
+  font-size: var(--list-text-size);
+  color: var(--list-text-color);
+}
+.list-item:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+}
+.list-item:hover .icon {
+  fill: var(--list-active-text-color);
+}
+.list-item:hover p {
+  color: var(--list-active-text-color);
+}
