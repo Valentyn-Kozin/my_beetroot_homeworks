@@ -1,0 +1,116 @@
+:root {
+  /* colors */
+  --background-color: #3399cc;
+  --background-border-color: #2d81ac;
+  --temperature-color: #bfdfef;
+  --text-color: #fff;
+  --border-color: #fff;
+  --city1-color: #3399cc;
+  --city2-color: #33cccc;
+  --city3-color: #996699;
+  --city4-color: #c24747;
+  --city5-color: #e2674a;
+  --city6-color: #ffcc66;
+  --city7-color: #99cc99;
+  --city8-color: #669999;
+  --city9-color: #cc6699;
+  --city10-color: #339966;
+  --city11-color: #666699;
+  /* text-size */
+  --text-size: 24px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
+}
+html,
+body {
+  min-height: 100vh;
+  font-size: 100%;
+}
+body {
+  font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+  background-color: var(--background-color);
+  border: 12px solid var(--background-border-color);
+  color: var(--text-color);
+}
+h1 {
+  margin-bottom: 24px;
+}
+main {
+  padding: 1em 20%;
+}
+.weather-wrapper {
+  margin-bottom: 24px;
+}
+ul {
+  list-style: none;
+  font-size: 0;
+  border: 1px solid var(--border-color);
+}
+ul li {
+  display: inline-block;
+  font-size: var(--text-size);
+  height: 108px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1em 0;
+}
+ul li:nth-child(1) {
+  width: 50%;
+  background-color: var(--city1-color);
+}
+ul li:nth-child(2) {
+  width: 25%;
+  background-color: var(--city2-color);
+}
+ul li:nth-child(3) {
+  width: 25%;
+  background-color: var(--city3-color);
+}
+ul li:nth-child(4) {
+  width: 25%;
+  background-color: var(--city4-color);
+}
+ul li:nth-child(5) {
+  width: 25%;
+  background-color: var(--city5-color);
+}
+ul li:nth-child(6) {
+  width: 25%;
+  background-color: var(--city6-color);
+}
+ul li:nth-child(7) {
+  width: 25%;
+  background-color: var(--city7-color);
+}
+ul li:nth-child(8) {
+  width: 25%;
+  background-color: var(--city8-color);
+}
+ul li:nth-child(9) {
+  width: 50%;
+  background-color: var(--city9-color);
+}
+ul li:nth-child(10) {
+  width: 25%;
+  background-color: var(--city10-color);
+}
+ul li:nth-child(11) {
+  width: 100%;
+  background-color: var(--city11-color);
+}
+.temperature {
+  color: var(--temperature-color);
+}
+ul:hover li {
+  opacity: 0.7;
+}
+ul:hover li:hover {
+  opacity: 1;
+}
+footer {
+  font-size: var(--text-size);
+}
