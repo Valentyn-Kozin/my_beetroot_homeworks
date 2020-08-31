@@ -49,6 +49,7 @@ ul {
   list-style: none;
   font-size: 0;
   border: 1px solid var(--border-color);
+  background-color: var(--border-color);
 }
 ul li {
   display: inline-block;
@@ -110,6 +111,7 @@ ul:hover li {
 }
 ul:hover li:hover {
   opacity: 1;
+  cursor: pointer;
 }
 footer {
   font-size: var(--text-size);
