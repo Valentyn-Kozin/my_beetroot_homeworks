@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease;
+}
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  display: block;
+}

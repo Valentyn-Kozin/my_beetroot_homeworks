@@ -1,0 +1,61 @@
+.coffee {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-self: stretch;
+  width: 100%;
+  background-color: $bg-color;
+  padding: 80px 30px;
+  .coffee-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $card-color;
+    width: calc((100%-20px) / 3);
+    padding: 0 105px;
+    height: 440px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+    &:hover {
+      transform: scaleY(1.13);
+    }
+    &__cost {
+      font-size: $cost-fontsize;
+      color: $cost-color;
+      font-family: $cost-font;
+      line-height: 100%;
+    }
+    &__img {
+      height: 135px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: -17px;
+    }
+    &__img-smoke {
+      margin: 0 20px 10px 0;
+    }
+    &__img-cup {
+      position: relative;
+    }
+    &__bean {
+      position: absolute;
+      top: 50%;
+      left: 42%;
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 0.10196078431372549;
+    }
+    &__text {
+      text-align: center;
+      font-family: $text-font;
+      max-width: 156px;
+      :first-child {
+        font-size: 36px;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+    }
+  }
+}
