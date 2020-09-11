@@ -1,0 +1,15 @@
+.load {
+  display: flex;
+  align-items: center;
+  &__svg {
+    margin-right: 13px;
+  }
+  &__text {
+    font-size: $date-size;
+    color: #99a5b0;
+    font-weight: 900;
+    line-height: 2.31;
+    letter-spacing: 0.33px;
+    text-transform: uppercase;
+  }
+}
