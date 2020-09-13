@@ -1,0 +1,72 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 130px 126px 120px;
+  box-shadow: 0px 4px 68px 0 rgba(0, 0, 0, 0.1);
+  &__title {
+    width: 100%;
+    font-family: $title-font;
+    font-size: $title-size;
+    letter-spacing: -0.21px;
+    margin-bottom: 20px;
+  }
+  &__content {
+    width: 100%;
+    margin-bottom: 32px;
+    & p {
+      font-family: $text-font;
+      font-weight: 300;
+      font-size: $main-text-size;
+      line-height: 1.89;
+      letter-spacing: 0.71px;
+      word-spacing: 2px;
+      opacity: 0.7;
+      margin-bottom: 32px;
+      &:last-child {
+        font-size: $secondery-text-size;
+        font-style: italic;
+        letter-spacing: 1.11px;
+        word-spacing: 2.5px;
+        margin-bottom: 0;
+        &::before {
+          content: "“";
+          font-size: 76px;
+          line-height: 0.47;
+          letter-spacing: -0.3px;
+        }
+      }
+    }
+  }
+  &__content-firstletter {
+    width: 70px;
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-size: $first-letter-size;
+    float: left;
+    opacity: 1;
+    height: 79px;
+    line-height: 0.8;
+    letter-spacing: -0.55px;
+    margin-right: 28px;
+  }
+  &__button {
+    button {
+      width: 264px;
+      height: 68px;
+      border: solid 2px $btn-color;
+      background-color: transparent;
+      color: $btn-color;
+      font-family: $text-font;
+      font-weight: bold;
+      font-size: $main-text-size;
+      line-height: 1.89;
+      letter-spacing: 3.6px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+    }
+  }
+}
