@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+}
+body {
+  width: 100vw;
+  font-size: 100%;
+  font-family: $text-font;
+  background-color: $bg-color;
+  display: flex;
+  //   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+}
+li {
+  list-style: none;
+}

@@ -1,0 +1,32 @@
+.title {
+  margin-bottom: 55px;
+  &__name {
+    font-size: $title-size;
+    color: $main-color;
+    font-weight: bold;
+    letter-spacing: 5.44px;
+    text-align: center;
+    margin-bottom: 51px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 45px;
+      height: 4px;
+      background-color: $horizon-color;
+      position: absolute;
+      bottom: -16px;
+      left: 46%;
+    }
+  }
+  &__description {
+    display: block;
+    text-align: center;
+    font-size: $main-size;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 561px;
+  }
+}
