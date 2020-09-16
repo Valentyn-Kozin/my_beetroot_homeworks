@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 @font-face {
-  font-family: "Miso Bold";
-  src: url("../assets/fonts/miso-bold.ttf") format("truetype");
+  font-family: "Miso";
+  src: url("../assets/fonts/miso-regular.ttf") format("truetype");
 }
 
 $cost-color: #02995b;
@@ -13,5 +13,5 @@ $bg-color: #fdde7e;
 $cost-fontsize: 70px;
 $text-fontsize: 56px;
 
-$cost-font: "Miso Bold", sans-serif;
+$cost-font: "Miso", sans-serif;
 $text-font: "Lato", sans-serif;
