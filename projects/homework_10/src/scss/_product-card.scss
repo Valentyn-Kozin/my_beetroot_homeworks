@@ -1,0 +1,11 @@
+$style: "product-card";
+.#{style} {
+  //   background-color: $card-color;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  //   @include flex();
+  &__col {
+    @include flex(flex-start, stretch, column);
+  }
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  font-size: 100%;
+  font-family: $main-font;
+  background-color: $bg-color;
+  color: $text-color;
+  @include flex(center, center);
+}
+main {
+  @include flex(center, center);
+  background-image: url(../img/main_bg.png);
+  background-repeat: no-repeat;
+  max-width: 800px;
+  max-height: 600px;
+  padding: 108px 50px 100px 62px;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 687px;
+  margin: auto;
+  background-color: $card-color;
+  padding: 79px 56px 23px 37px;
+  border-radius: 10px;
+  //   @include flex-row(centre, centre);
+  //   display: flex;
+}
