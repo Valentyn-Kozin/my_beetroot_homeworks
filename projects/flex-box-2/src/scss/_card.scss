@@ -7,6 +7,9 @@
   &:nth-child(3n + 2) {
     margin-right: 0px;
   }
+  &:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
   &__link {
     display: block;
     height: 100%;
@@ -15,10 +18,17 @@
   &__img-wrapper {
     width: 100%;
     height: 251px;
-  }
-  &__img {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
   &__text {
     width: 100%;
@@ -69,7 +79,18 @@
   }
   &__img-wrapper {
     width: 100%;
-    height: 100%;
+    height: 540px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
   &__text {
     position: absolute;
