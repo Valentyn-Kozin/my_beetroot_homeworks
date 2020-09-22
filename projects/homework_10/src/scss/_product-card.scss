@@ -1,11 +1,25 @@
 $style: "product-card";
-.#{style} {
-  //   background-color: $card-color;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+.#{$style} {
   //   @include flex();
+  &__logo-wrapper {
+    max-width: 65px;
+    max-height: 33px;
+    @include padding-hack(6%, contain);
+    margin-bottom: 21px;
+  }
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
   &__col {
     @include flex(flex-start, stretch, column);
+    &:first-child {
+      padding: 48px 80px 10px 15px;
+    }
+    &:last-child {
+      flex-basis: 185px;
+      max-width: 185px;
+    }
   }
 }
