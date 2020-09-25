@@ -26,14 +26,14 @@
             <div class="product-card__col">
               <img src="./img/Nike-SB-Stefan-Janoski-Max.png" alt="" />
             </div>
-            <div class="product-card__col">
-              <div class="product-card__info">
+            <div class="product-card__col product-card__info">
+              
                 <h2 class="product-card__title">Nike SB Stefan Janoski Max</h2>
                 <p class="product-card__description">
                   Unisex Skateboarding Shoe
                 </p>
                 <ul class="product-card__rating-list">
-                  <li class="product-card__rating-list-item">
+                  <li class="product-card__rating-list-item product-card__rating-list-item--rated">
                     <svg
                       width="12"
                       height="12"
@@ -50,7 +50,7 @@
                       />
                     </svg>
                   </li>
-                  <li class="product-card__rating-list-item">
+                  <li class="product-card__rating-list-item product-card__rating-list-item--rated">
                     <svg
                       width="12"
                       height="12"
@@ -67,7 +67,7 @@
                       />
                     </svg>
                   </li>
-                  <li class="product-card__rating-list-item">
+                  <li class="product-card__rating-list-item product-card__rating-list-item--rated">
                     <svg
                       width="12"
                       height="12"
@@ -119,27 +119,29 @@
                     </svg>
                   </li>
                 </ul>
-                <div class="product-card__filters">
-                  <select class="product-card__select product-card__button">
-                    <option value="Size">Size</option>
-                    <option value="Size1">Size1</option>
-                    <option value="Size2">Size2</option>
-                    <option value="Size3">Size3</option>
-                    <option value="Size4">Size4</option>
-                  </select>
-                  <select class="product-card__select product-card__button">
-                    <option value="Qty">Qty</option>
-                    <option value="Qty1">Qty1</option>
-                    <option value="Qty2">Qty2</option>
-                  </select>
-                </div>
-                <button
-                  type="submit"
-                  class="product-card__button product-card__button--submit"
-                >
-                  add to card
-                </button>
-              </div>
+                <form action="/" class="product-card__form">
+                  <div class="product-card__filters">
+                    <select class="product-card__select product-card__button">
+                      <option value="Size">Size</option>
+                      <option value="Size1">Size1</option>
+                      <option value="Size2">Size2</option>
+                      <option value="Size3">Size3</option>
+                      <option value="Size4">Size4</option>
+                    </select>
+                    <select class="product-card__select product-card__button">
+                      <option value="Qty">Qty</option>
+                      <option value="Qty1">Qty1</option>
+                      <option value="Qty2">Qty2</option>
+                    </select>
+                  </div>
+                  <button
+                    type="submit"
+                    class="product-card__button product-card__button--submit"
+                  >
+                    add to card
+                  </button>
+                </form>
+              
             </div>
           </div>
         </div>

@@ -22,4 +22,25 @@ $style: "product-card";
       max-width: 185px;
     }
   }
+  &__title {
+    @include text($title-size, 400, inherit);
+    margin-bottom: 16px;
+  }
+  &__description {
+    @include text($main-size, 400, inherit);
+    opacity: 0.5411764705882353;
+    margin-bottom: 24px;
+  }
+  &__rating-list {
+    @include flex(flex-start, center);
+    opacity: 0.5882352941176471;
+    margin-bottom: 26px;
+  }
+  &__rating-list-item {
+    &--rated {
+      svg {
+        fill: $rating-color;
+      }
+    }
+  }
 }
