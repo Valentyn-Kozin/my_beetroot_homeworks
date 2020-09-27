@@ -11,7 +11,7 @@ body {
   font-size: 100%;
   font-family: $main-font;
   background-color: $bg-color;
-  color: $text-color;
+  color: rgba($text-color, 0.3);
   @include flex(center, center);
 }
 main {

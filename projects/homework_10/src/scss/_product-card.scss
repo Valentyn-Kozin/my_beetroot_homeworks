@@ -1,6 +1,5 @@
 $style: "product-card";
 .#{$style} {
-  //   @include flex();
   &__logo-wrapper {
     max-width: 65px;
     max-height: 33px;
@@ -23,7 +22,7 @@ $style: "product-card";
     }
   }
   &__title {
-    @include text($title-size, 400, inherit);
+    @include text($title-size, 400, $text-color);
     margin-bottom: 16px;
   }
   &__description {
@@ -37,10 +36,95 @@ $style: "product-card";
     margin-bottom: 26px;
   }
   &__rating-list-item {
+    margin-right: 1px;
+    svg {
+      fill: $text-color;
+    }
     &--rated {
       svg {
         fill: $rating-color;
       }
     }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__filters {
+    margin-bottom: 28px;
+    @include flex();
+  }
+  &__button {
+    background-color: $card-color;
+    border: 1px solid rgba($text-color, 0.3);
+    color: rgba($text-color, 0.3);
+    width: 185px;
+    height: 41px;
+    cursor: pointer;
+    @include flex(center, center);
+    &:focus {
+      outline: none;
+    }
+    @include transition(background-color);
+    &:hover {
+      background-color: lighten($card-color, 10%);
+    }
+  }
+  &__select {
+    width: 70px;
+    height: 33px;
+    padding-left: 10px;
+    margin-right: 1px;
+    &:last-child {
+      margin-right: 0;
+    }
+    overflow: visible;
+  }
+  &__img {
+    margin-bottom: 78px;
+  }
+  &__radio {
+    @include flex(center, center);
+    label {
+      margin-right: 9px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: relative;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+  &__radio-item {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include transition(border, padding);
+    &--dark-blue {
+      background-color: $dark-blue;
+    }
+    &--white {
+      background-color: $white;
+    }
+    &--red {
+      background-color: $red;
+    }
+    &--blue {
+      background-color: $blue;
+    }
+  }
+  input[type="radio"]:checked + span,
+  input[type="radio"]:hover + span {
+    border: 2px solid rgba($text-color, 0.3);
+    padding: 6px;
   }
 }
