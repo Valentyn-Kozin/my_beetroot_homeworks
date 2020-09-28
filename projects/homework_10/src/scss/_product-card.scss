@@ -4,7 +4,7 @@ $style: "product-card";
     max-width: 65px;
     max-height: 33px;
     @include padding-hack(6%, contain);
-    margin-bottom: 21px;
+    margin-bottom: 13px;
   }
   &__content {
     display: flex;
@@ -14,7 +14,7 @@ $style: "product-card";
   &__col {
     @include flex(flex-start, stretch, column);
     &:first-child {
-      padding: 48px 80px 10px 15px;
+      padding: 53px 80px 4px 15px;
     }
     &:last-child {
       flex-basis: 185px;
@@ -23,17 +23,17 @@ $style: "product-card";
   }
   &__title {
     @include text($title-size, 400, $text-color);
-    margin-bottom: 16px;
+    margin-bottom: 6px;
   }
   &__description {
     @include text($main-size, 400, inherit);
     opacity: 0.5411764705882353;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
   }
   &__rating-list {
     @include flex(flex-start, center);
     opacity: 0.5882352941176471;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
   &__rating-list-item {
     margin-right: 1px;
@@ -80,7 +80,7 @@ $style: "product-card";
     overflow: visible;
   }
   &__img {
-    margin-bottom: 78px;
+    margin-bottom: 74px;
   }
   &__radio {
     @include flex(center, center);
