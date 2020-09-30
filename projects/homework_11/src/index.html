@@ -13,7 +13,62 @@
   </head>
   <body>
     <section class="sign-section">
-      <form action="/" class="sign-section__form" name="sign_form"></form>
+      <form
+        action="#"
+        class="sign-section__form"
+        name="sign_form"
+        method="POST"
+      >
+        <div class="sign-section__header">
+          <a
+            href="#"
+            class="sign-section__header-link sign-section__header-link--active"
+          >
+            Sign in
+          </a>
+          <a href="#" class="sign-section__header-link">Join us</a>
+        </div>
+        <div class="sign-section__inner">
+          <div class="sign-section__username-input">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              minlength="6"
+              id="username"
+              class="sign-section__input"
+            />
+            <p class="sign-section__error">invalid username</p>
+          </div>
+          <div class="sign-section__password-input">
+            <label for="password">Password</label>
+            <input
+              type="text"
+              name="password"
+              minlength="6"
+              id="password"
+              class="sign-section__input"
+            />
+            <p class="sign-section__error">invalid password</p>
+          </div>
+          <div class="sign-section__check">
+            <input checked type="checkbox" name="keep" id="keep" />
+            <label class="sign-section__checkbox" for="keep">
+              <span class="form__checkbox">&#10004;</span>
+              Keep me signed in
+            </label>
+          </div>
+          <button class="sign-section__btn" type="submit">Sign in</button>
+          <div class="sign-section__help">
+            <div class="sign-section__link-wrapper">
+              <a href="#" class="sign-section__link">Forgot password</a>
+            </div>
+            <div class="sign-section__link-wrapper">
+              <a href="#" class="sign-section__link">Create an account</a>
+            </div>
+          </div>
+        </div>
+      </form>
     </section>
     <script src="js/bundle.js"></script>
   </body>
