@@ -12,63 +12,120 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="sign-section">
-      <form
-        action="#"
-        class="sign-section__form"
-        name="sign_form"
-        method="POST"
-      >
-        <div class="sign-section__header">
-          <a
-            href="#"
-            class="sign-section__header-link sign-section__header-link--active"
+    <section class="form-section">
+      <ul class="form-section__list">
+        <li class="form-section__item">
+          <a href="#sign" class="form-section__link">Username</a>
+        </li>
+        <li class="form-section__item">
+          <a href="#join" class="form-section__link">Join us</a>
+        </li>
+      </ul>
+      <div class="form-section__content">
+        <div class="form-section__tab" id="#sign">
+          <form
+            action="#"
+            class="form-section__form"
+            name="sign_form"
+            method="POST"
           >
-            Sign in
-          </a>
-          <a href="#" class="sign-section__header-link">Join us</a>
-        </div>
-        <div class="sign-section__inner">
-          <div class="sign-section__username-input">
-            <label for="username">Username</label>
-            <input
-              type="text"
-              name="username"
-              minlength="6"
-              id="username"
-              class="sign-section__input"
-            />
-            <p class="sign-section__error">invalid username</p>
-          </div>
-          <div class="sign-section__password-input">
-            <label for="password">Password</label>
-            <input
-              type="text"
-              name="password"
-              minlength="6"
-              id="password"
-              class="sign-section__input"
-            />
-            <p class="sign-section__error">invalid password</p>
-          </div>
-          <div class="sign-section__check">
-            <input checked type="checkbox" name="keep" id="keep" />
-            <label class="sign-section__checkbox" for="keep">
-              <span class="form__checkbox">&#10004;</span>
-              Keep me signed in
-            </label>
-          </div>
-          <button class="sign-section__btn" type="submit">Sign in</button>
-          <div class="sign-section__help">
-            <div class="sign-section__link-wrapper">
-              <a href="#" class="sign-section__link">Forgot password</a>
+            <div class="form-section__inner">
+              <div class="form-section__username-input">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  name="username"
+                  minlength="6"
+                  id="username"
+                  class="form-section__input"
+                  required
+                />
+                <p class="form-section__error">invalid username</p>
+              </div>
+              <div class="form-section__password-input">
+                <label for="password">Password</label>
+                <input
+                  type="text"
+                  name="password"
+                  minlength="6"
+                  id="password"
+                  class="form-section__input"
+                  required
+                />
+                <p class="form-section__error">invalid password</p>
+              </div>
+              <div class="form-section__check">
+                <input checked type="checkbox" name="keep" id="keep" />
+                <label class="form-section__checkbox" for="keep">
+                  <span class="form__checkbox">&#10004;</span>
+                  Keep me signed in
+                </label>
+              </div>
+              <button class="form-section__btn" type="submit">Sign in</button>
+              <div class="form-section__help">
+                <div class="form-section__link-wrapper">
+                  <a href="#" class="form-section__link-small">
+                    Forgot password
+                  </a>
+                </div>
+                <div class="form-section__link-wrapper">
+                  <a href="#join" class="form-section__link-small">
+                    Create an account
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="sign-section__link-wrapper">
-              <a href="#" class="sign-section__link">Create an account</a>
-            </div>
-          </div>
+          </form>
         </div>
-      </form>
+        <div class="form-section__tab" id="#join">
+          <form
+            action="#"
+            class="form-section__form"
+            name="join_form"
+            method="POST"
+          >
+            <div class="form-section__inner">
+              <div class="form-section__username-input">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  name="username"
+                  minlength="6"
+                  id="username"
+                  class="form-section__input"
+                  required
+                />
+                <p class="form-section__error">invalid username</p>
+              </div>
+              <div class="form-section__password-input">
+                <label for="password">Password</label>
+                <input
+                  type="text"
+                  name="password"
+                  minlength="6"
+                  id="password"
+                  class="form-section__input"
+                  required
+                />
+                <p class="form-section__error">invalid password</p>
+              </div>
+              <div class="form-section__password-input">
+                <label for="repeat_password">Repeat password</label>
+                <input
+                  type="text"
+                  name="password"
+                  minlength="6"
+                  id="password"
+                  class="form-section__input"
+                  required
+                />
+                <p class="form-section__error">invalid password</p>
+              </div>
+              <button class="form-section__btn" type="submit">Join in</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
     <script src="js/bundle.js"></script>
   </body>
