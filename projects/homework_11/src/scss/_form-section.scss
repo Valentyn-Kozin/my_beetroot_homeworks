@@ -5,6 +5,7 @@ $style: "form-section";
   &__wrapper {
     max-width: 400px;
     width: 100%;
+    height: 500px;
     padding: 52px 70px 55px;
     background-image: linear-gradient(
         45deg,
@@ -17,6 +18,66 @@ $style: "form-section";
     position: relative;
   }
   &__list {
-    z-index: 1;
+    margin-bottom: 50px;
+  }
+  &__item {
+    display: inline-block;
+    font-size: $header-size;
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
+  &__header-link {
+    color: $inactive-color;
+    font-weight: 700;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      color: $main-color;
+      @include transition();
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $hover-color;
+      }
+    }
+  }
+  &__content {
+  }
+  &__tab {
+    &:not(:target) {
+      display: none;
+    }
+  }
+  &__inner {
+  }
+  &__input {
+    @include flex(flex-start, stretch, column);
+    margin-bottom: 18px;
+    & label {
+      margin-bottom: 11px;
+    }
+  }
+  &__input-text {
+    background-color: transparent;
+    width: 100%;
+    height: 42px;
+    border: solid 2px $input-color;
+    padding: 0 10px;
+    color: $main-color;
+    font-size: $main-font;
+    outline: none;
+    @include transition();
+    &:focus,
+    &:hover {
+      border-color: $btn-color;
+    }
   }
 }

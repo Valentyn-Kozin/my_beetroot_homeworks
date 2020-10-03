@@ -11,10 +11,14 @@ body {
   font-size: 100%;
   font-family: $main-font;
   background-color: $bg-color;
+  color: $main-color;
 }
 a {
   text-decoration: none;
-  //   color: $main-color;
+  color: $inactive-color;
+  &:focus {
+    color: $main-color;
+  }
 }
 ul {
   list-style: none;

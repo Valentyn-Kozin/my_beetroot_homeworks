@@ -15,15 +15,15 @@
     <section class="form-section">
       <div class="form-section__wrapper">
         <ul class="form-section__list">
-          <li class="form-section__item">
-            <a href="#sign" class="form-section__header-link">Username</a>
+          <li class="form-section__item form-section__item--active">
+            <a href="#sign" class="form-section__header-link">Sign in</a>
           </li>
           <li class="form-section__item">
             <a href="#join" class="form-section__header-link">Join us</a>
           </li>
         </ul>
         <div class="form-section__content">
-          <div class="form-section__tab" id="#sign">
+          <div class="form-section__tab" id="sign">
             <form
               action="#"
               class="form-section__form"
@@ -31,29 +31,27 @@
               method="POST"
             >
               <div class="form-section__inner">
-                <div class="form-section__username-input">
+                <div class="form-section__input">
                   <label for="username">Username</label>
                   <input
                     type="text"
                     name="username"
                     minlength="6"
                     id="username"
-                    class="form-section__input"
+                    class="form-section__input-text"
                     required
                   />
-                  <p class="form-section__error">invalid username</p>
                 </div>
-                <div class="form-section__password-input">
+                <div class="form-section__input">
                   <label for="password">Password</label>
                   <input
                     type="text"
                     name="password"
                     minlength="6"
                     id="password"
-                    class="form-section__input"
+                    class="form-section__input-text"
                     required
                   />
-                  <p class="form-section__error">invalid password</p>
                 </div>
                 <div class="form-section__check">
                   <input checked type="checkbox" name="keep" id="keep" />
@@ -78,7 +76,7 @@
               </div>
             </form>
           </div>
-          <div class="form-section__tab" id="#join">
+          <div class="form-section__tab" id="join">
             <form
               action="#"
               class="form-section__form"
@@ -86,41 +84,38 @@
               method="POST"
             >
               <div class="form-section__inner">
-                <div class="form-section__username-input">
+                <div class="form-section__input">
                   <label for="username">Username</label>
                   <input
                     type="text"
                     name="username"
                     minlength="6"
                     id="username"
-                    class="form-section__input"
+                    class="form-section__input-text"
                     required
                   />
-                  <p class="form-section__error">invalid username</p>
                 </div>
-                <div class="form-section__password-input">
+                <div class="form-section__input">
                   <label for="password">Password</label>
                   <input
                     type="text"
                     name="password"
                     minlength="6"
                     id="password"
-                    class="form-section__input"
+                    class="form-section__input-text"
                     required
                   />
-                  <p class="form-section__error">invalid password</p>
                 </div>
-                <div class="form-section__password-input">
+                <div class="form-section__input">
                   <label for="repeat_password">Repeat password</label>
                   <input
                     type="text"
                     name="password"
                     minlength="6"
                     id="password"
-                    class="form-section__input"
+                    class="form-section__input-text"
                     required
                   />
-                  <p class="form-section__error">invalid password</p>
                 </div>
                 <button class="form-section__btn" type="submit">Join in</button>
               </div>
