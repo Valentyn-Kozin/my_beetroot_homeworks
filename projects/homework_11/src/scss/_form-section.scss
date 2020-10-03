@@ -1,4 +1,22 @@
 $style: "form-section";
-.#{style} {
+.#{$style} {
   min-height: 100vh;
+  @include flex(center, center, column);
+  &__wrapper {
+    max-width: 400px;
+    width: 100%;
+    padding: 52px 70px 55px;
+    background-image: linear-gradient(
+        45deg,
+        rgba(45, 33, 169, 0.99) 0%,
+        rgba(200, 115, 217, 0.69) 100%
+      ),
+      url(../img/Bridge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  &__list {
+    z-index: 1;
+  }
 }
