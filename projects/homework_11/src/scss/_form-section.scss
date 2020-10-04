@@ -14,7 +14,7 @@ $style: "form-section";
     content: "";
     position: absolute;
     display: block;
-    background-image: url(../img/bridge.png);
+    background-image: url(../img/Bridge.jpg);
     top: 0;
     right: 0;
     left: 0;
@@ -51,7 +51,7 @@ $style: "form-section";
       text-decoration: none;
       color: $main-color;
       &:after {
-        content: " ";
+        content: "";
         position: absolute;
         left: 0;
         bottom: -4px;
@@ -101,20 +101,14 @@ $style: "form-section";
     height: 100%;
     cursor: pointer;
   }
-  &__checkbox-wrapper {
-    @include flex(flex-start, center);
-    height: 16px;
-    position: absolute;
-  }
   &__checkbox-text {
-    @include flex(center, center);
+    @include flex(start, center);
     font-size: $text-size;
     font-weight: 700;
     @include transition();
     &::before {
       content: " ";
       font-size: $text-size;
-      position: relative;
       width: 16px;
       height: 16px;
       background-color: $btn-color;
@@ -123,10 +117,9 @@ $style: "form-section";
       margin-right: 7px;
     }
   }
-  input:checked + div:before {
+  input:checked + span:before {
     content: "\2714";
     font-size: $text-size;
-    position: relative;
     width: 16px;
     height: 16px;
     background-color: $btn-color;

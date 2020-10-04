@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="form-section">
+    <div class="form-section">
       <div class="form-section__wrapper">
         <ul class="form-section__list">
           <li class="form-section__item form-section__item--active">
@@ -55,12 +55,10 @@
                 </div>
                 <div class="form-section__check">
                   <label class="form-section__checkbox" for="keep">
-                    <div class="form-section__checkbox-wrapper">
-                      <input checked type="checkbox" name="keep" id="keep" />
-                      <div class="form-section__checkbox-text">
-                        Keep me signed in
-                      </div>
-                    </div>
+                    <input checked type="checkbox" name="keep" id="keep" />
+                    <span class="form-section__checkbox-text">
+                      Keep me signed in
+                    </span>
                   </label>
                 </div>
                 <button class="form-section__btn" type="submit">Sign in</button>
@@ -93,7 +91,7 @@
                     type="text"
                     name="username"
                     minlength="6"
-                    id="username"
+                    id="new_username"
                     class="form-section__input-text"
                     required
                   />
@@ -104,7 +102,7 @@
                     type="text"
                     name="password"
                     minlength="6"
-                    id="password"
+                    id="new_password"
                     class="form-section__input-text"
                     required
                   />
@@ -115,7 +113,7 @@
                     type="text"
                     name="password"
                     minlength="6"
-                    id="password"
+                    id="repeat_password"
                     class="form-section__input-text"
                     required
                   />
@@ -126,7 +124,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <script src="js/bundle.js"></script>
   </body>
 </html>
