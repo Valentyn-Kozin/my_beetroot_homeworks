@@ -1,0 +1,40 @@
+$style: "header";
+.#{$style} {
+  min-height: 100vh;
+  background: url(../img/hero-bg.jpg) center no-repeat;
+  background-size: cover;
+  @include flex(center, center);
+  position: relative;
+  &__wrapper {
+    max-width: 591px;
+    text-align: center;
+  }
+  &__link {
+    display: inline-block;
+    margin-bottom: 97px;
+  }
+  &__icon {
+    width: 67px;
+    height: 67px;
+  }
+  &__title {
+    @include text($title-size, 700, $main-color);
+    text-transform: uppercase;
+    letter-spacing: 8.64px;
+    margin-bottom: 57px;
+  }
+  &__text {
+    @include text($header-text-size, 400, $main-color);
+    line-height: 1.93;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+  &__scroll {
+    fill: $main-color;
+    width: 23px;
+    height: 37px;
+    position: absolute;
+    left: 50%;
+    bottom: 152px;
+  }
+}
