@@ -14,8 +14,7 @@ $style: "header";
     margin-bottom: 97px;
   }
   &__icon {
-    width: 67px;
-    height: 67px;
+    @include size(67px);
   }
   &__title {
     @include text($title-size, 700, $main-color);
