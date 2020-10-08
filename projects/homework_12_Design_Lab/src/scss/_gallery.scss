@@ -1,0 +1,49 @@
+$style: "gallery";
+.#{$style} {
+  &__list {
+    @include flex(flex-start, stretch, row, wrap);
+  }
+  &__item {
+    width: 28.6%;
+    height: 237px;
+    margin: 0 10px 10px 0;
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+    &:nth-child(3n + 2) {
+      flex-grow: 1;
+    }
+    &:nth-child(1) {
+      background-image: url(../img/Topworkz.jpg);
+    }
+    &:nth-child(2) {
+      background-image: url(../img/joint.jpg);
+    }
+    &:nth-child(3) {
+      background-image: url(../img/market.jpg);
+    }
+    &:nth-child(4) {
+      background-image: url(../img/worktop.jpg);
+    }
+    &:nth-child(5) {
+      background-image: url(../img/lable.jpg);
+    }
+    &:nth-child(6) {
+      background-image: url(../img/kyiv.jpg);
+    }
+  }
+  &__title-wrapper {
+    height: 100%;
+    position: relative;
+  }
+  &__title {
+    position: absolute;
+    @include position(170px, 0, 0, 50px);
+    @include text($section-title-size, 700, $main-color);
+    letter-spacing: 5.44px;
+    text-transform: uppercase;
+  }
+}

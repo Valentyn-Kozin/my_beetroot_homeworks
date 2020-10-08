@@ -1,21 +1,13 @@
 $style: "section-block";
 .#{$style} {
-  min-height: 630px;
   @include flex(center, center);
-  //   padding: 160px 26.5%;
   &__wrapper {
     max-width: 900px;
-    padding-right: 16.7%;
-    padding-left: 16.7%;
-    border: solid 2px inherit;
+    width: 100%;
+    border: 2px solid transparent;
     border-top: none;
     position: relative;
-  }
-  &__title-wrapper {
-    position: absolute;
-    top: -17px;
-    left: 50%;
-    transform: translateX(-50%);
+    @include flex(center, center);
     &::before,
     &::after {
       content: "";
@@ -31,5 +23,14 @@ $style: "section-block";
     &::after {
       right: 0;
     }
+  }
+  &__title-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__inner {
+    @include flex(center, center, column);
   }
 }

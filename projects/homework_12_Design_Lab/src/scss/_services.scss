@@ -1,0 +1,31 @@
+$style: "services";
+.#{$style} {
+  min-height: 488px;
+  background: url(../img/services.jpg) center no-repeat;
+  background-size: cover;
+  color: $main-color;
+  &__wrapper {
+    padding: 30px 0;
+    border-color: $main-color;
+    &::before,
+    &::after {
+      background-color: $main-color;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 5.44px;
+    font-size: $section-title-size;
+  }
+  &__inner {
+    max-width: 544px;
+    width: 100%;
+    margin-top: 48px auto 0;
+  }
+  &__text {
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.63;
+    font-size: $main-text-size;
+  }
+}

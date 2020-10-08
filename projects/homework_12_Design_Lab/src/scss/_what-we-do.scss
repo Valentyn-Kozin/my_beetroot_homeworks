@@ -1,0 +1,43 @@
+$style: "what-we-do";
+.#{$style} {
+  min-height: 1415px;
+  color: $secondary-color;
+  &__wrapper {
+    padding: 92px 0;
+    border-color: $secondary-color;
+    &::before,
+    &::after {
+      background-color: $secondary-color;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 5.44px;
+    font-size: $section-title-size;
+  }
+  &__inner {
+    max-width: 550px;
+    width: 100%;
+    margin: 33px auto 0;
+  }
+  &__item {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 110px;
+    }
+  }
+  &__icon {
+    @include size(91px);
+    margin-bottom: 40px;
+  }
+  &__item-header {
+    @include text($item-title-size, 700, $secondary-color);
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+  }
+  &__item-text {
+    @include text($secondary-text-size, 300, $secondary-color);
+    line-height: 1.86;
+  }
+}

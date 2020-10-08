@@ -1,0 +1,12 @@
+$style: "copyright";
+.#{$style} {
+  @include flex(center, flex-start);
+  &__link {
+    display: inline-block;
+  }
+  &__icon {
+    width: 35px;
+    height: auto;
+    fill: $secondary-color;
+  }
+}

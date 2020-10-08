@@ -15,6 +15,7 @@ $style: "header";
   }
   &__icon {
     @include size(67px);
+    fill: $main-color;
   }
   &__title {
     @include text($title-size, 700, $main-color);
