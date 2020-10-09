@@ -28,13 +28,15 @@ $style: "what-we-do";
   }
   &__icon {
     @include size(91px);
-    margin-bottom: 40px;
+    width: 79px;
+    height: 84px;
+    margin-bottom: 32px;
   }
   &__item-header {
     @include text($item-title-size, 700, $secondary-color);
     letter-spacing: 3.2px;
     text-transform: uppercase;
-    margin-bottom: 42px;
+    margin-bottom: 25px;
   }
   &__item-text {
     @include text($secondary-text-size, 300, $secondary-color);

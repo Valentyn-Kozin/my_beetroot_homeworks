@@ -12,7 +12,7 @@ $style: "section-block";
     &::after {
       content: "";
       position: absolute;
-      width: 30%;
+      width: 27%;
       height: 2px;
       top: 0;
       background-color: inherit;
@@ -29,8 +29,5 @@ $style: "section-block";
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  &__inner {
-    @include flex(center, center, column);
   }
 }

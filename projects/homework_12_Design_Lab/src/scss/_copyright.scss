@@ -1,12 +1,18 @@
 $style: "copyright";
 .#{$style} {
-  @include flex(center, flex-start);
+  @include flex(center, center);
+  padding-bottom: 63px;
   &__link {
     display: inline-block;
   }
   &__icon {
     width: 35px;
-    height: auto;
+    height: 35px;
     fill: $secondary-color;
+    stroke: $secondary-color;
+    margin-right: 36px;
+  }
+  &__text {
+    @include text($secondary-text-size, 300, $secondary-color);
   }
 }

@@ -41,9 +41,20 @@ $style: "gallery";
   }
   &__title {
     position: absolute;
-    @include position(170px, 0, 0, 50px);
+    @include position(161px, 0, 0, 43px);
     @include text($section-title-size, 700, $main-color);
     letter-spacing: 5.44px;
     text-transform: uppercase;
+  }
+  @keyframes move-gallery {
+    from {
+      left: 43px;
+    }
+    to {
+      left: 60px;
+    }
+  }
+  &__item:hover &__title {
+    animation: move-gallery 1s alternate infinite;
   }
 }

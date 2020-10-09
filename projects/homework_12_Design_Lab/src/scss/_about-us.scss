@@ -3,6 +3,7 @@ $style: "about-us";
   min-height: 630px;
   color: $secondary-color;
   &__wrapper {
+    min-height: 312px;
     padding: 29px 0;
     border-color: $secondary-color;
     &::before,
@@ -18,7 +19,7 @@ $style: "about-us";
   &__inner {
     max-width: 553px;
     width: 100%;
-    margin: 48px auto 0;
+    margin: 48px 0 0;
   }
   &__text {
     @include text($main-text-size, 300, $secondary-color);

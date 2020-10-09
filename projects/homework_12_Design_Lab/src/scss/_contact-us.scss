@@ -3,6 +3,7 @@ $style: "contact-us";
   min-height: 494px;
   color: $secondary-color;
   &__wrapper {
+    min-height: 293px;
     padding: 50px 0;
     border-color: $secondary-color;
     &::before,
@@ -18,25 +19,34 @@ $style: "contact-us";
   &__inner {
     max-width: 553px;
     width: 100%;
-    margin: 27px auto 0;
+    margin-top: 20px;
+    @include flex(center, center, column);
   }
   &__text {
     @include text($main-text-size, 300, $secondary-color);
     text-align: center;
     line-height: 1.63;
-    margin-bottom: 42px;
+    margin-bottom: 38px;
   }
   &__link-wrapper {
     max-width: 395px;
     width: 100%;
     height: 58px;
     background-color: $secondary-color;
+    border: 1px solid $secondary-color;
     @include flex(center, center);
+    color: $main-color;
+    transition: background-color, color 0.3s ease;
+    &:hover {
+      background-color: $main-color;
+      color: $secondary-color;
+    }
   }
   &__link-text {
-    padding: 0 135px;
+    padding: 0 134px;
     text-transform: uppercase;
     letter-spacing: 2.56px;
-    @include text($main-text-size, 400, $main-color);
+    font-size: $main-text-size;
+    font-weight: 400;
   }
 }

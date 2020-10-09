@@ -1,9 +1,9 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
 
   <symbol id="logo" viewBox="0 0 69 71">
-    <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+    <path fill-rule="evenodd"   stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
     d="M63.675,68.857 L34.860,13.860 L6.046,68.857 L63.675,68.857 Z"/>
-    <path fill-rule="evenodd"  stroke="rgb(246, 247, 252)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+    <path fill-rule="evenodd"   stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
     d="M34.500,1.000 C53.002,1.000 68.000,15.870 68.000,34.214 C68.000,52.558 53.002,67.429 34.500,67.429 C15.998,67.429 1.000,52.558 1.000,34.214 C1.000,15.870 15.998,1.000 34.500,1.000 Z"/>
     <path fill-rule="evenodd"  
     d="M34.860,63.857 C36.850,63.857 38.462,65.456 38.462,67.429 C38.462,69.401 36.850,71.000 34.860,71.000 C32.871,71.000 31.258,69.401 31.258,67.429 C31.258,65.456 32.871,63.857 34.860,63.857 Z"/>
