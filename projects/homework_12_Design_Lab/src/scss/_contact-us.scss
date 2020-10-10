@@ -4,7 +4,7 @@ $style: "contact-us";
   color: $secondary-color;
   &__wrapper {
     min-height: 293px;
-    padding: 50px 0;
+    padding: 50px 5px;
     border-color: $secondary-color;
     &::before,
     &::after {
@@ -12,9 +12,14 @@ $style: "contact-us";
     }
   }
   &__title {
-    @include text($contuct-size, 700, $secondary-color);
+    @include text($section-title-size-mobile, 700, $secondary-color);
     text-transform: uppercase;
-    letter-spacing: 4.88px;
+    letter-spacing: 2.9px;
+    @media screen and(min-width: 576px) {
+      @include text($contuct-size, 700, $secondary-color);
+      text-transform: uppercase;
+      letter-spacing: 4.88px;
+    }
   }
   &__inner {
     max-width: 553px;
@@ -25,8 +30,12 @@ $style: "contact-us";
   &__text {
     @include text($main-text-size, 300, $secondary-color);
     text-align: center;
-    line-height: 1.63;
-    margin-bottom: 38px;
+    line-height: 1.09;
+    margin-bottom: 25px;
+    @media screen and (min-width: 576px) {
+      line-height: 1.63;
+      margin-bottom: 38px;
+    }
   }
   &__link-wrapper {
     max-width: 395px;
@@ -36,17 +45,22 @@ $style: "contact-us";
     border: 1px solid $secondary-color;
     @include flex(center, center);
     color: $main-color;
-    transition: background-color, color 0.3s ease;
-    &:hover {
-      background-color: $main-color;
-      color: $secondary-color;
+    @media screen and(min-width: 576px) {
+      transition: background-color, color 0.3s ease;
+      &:hover {
+        background-color: $main-color;
+        color: $secondary-color;
+      }
     }
   }
   &__link-text {
-    padding: 0 134px;
+    padding: 0 112px;
     text-transform: uppercase;
     letter-spacing: 2.56px;
     font-size: $main-text-size;
     font-weight: 400;
+    @media screen and(min-width: 576px) {
+      padding: 0 134px;
+    }
   }
 }

@@ -14,14 +14,21 @@ $style: "services";
     }
   }
   &__title {
+    @include text($section-title-size-mobile, 700, $main-color);
     text-transform: uppercase;
-    letter-spacing: 5.44px;
-    font-size: $section-title-size;
+    letter-spacing: 3.63px;
+    @media screen and(min-width: 576px) {
+      @include text($section-title-size, 700, $main-color);
+      letter-spacing: 5.44px;
+    }
   }
   &__inner {
     max-width: 544px;
     width: 100%;
-    margin-top: 48px;
+    margin-top: 24px;
+    @media screen and(min-width: 576px) {
+      margin-top: 48px;
+    }
   }
   &__text {
     font-weight: 300;

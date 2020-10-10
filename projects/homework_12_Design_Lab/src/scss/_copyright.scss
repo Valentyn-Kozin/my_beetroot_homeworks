@@ -1,7 +1,10 @@
 $style: "copyright";
 .#{$style} {
   @include flex(center, center);
-  padding-bottom: 63px;
+  padding-bottom: 42px;
+  @media screen and (min-width: 576px) {
+    padding-bottom: 63px;
+  }
   &__link {
     display: inline-block;
   }
@@ -10,7 +13,10 @@ $style: "copyright";
     height: 35px;
     fill: $secondary-color;
     stroke: $secondary-color;
-    margin-right: 36px;
+    margin-right: 24px;
+    @media screen and (min-width: 576px) {
+      margin-right: 36px;
+    }
   }
   &__text {
     @include text($secondary-text-size, 300, $secondary-color);

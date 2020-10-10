@@ -11,32 +11,49 @@ $style: "what-we-do";
     }
   }
   &__title {
+    @include text($section-title-size-mobile, 700, $secondary-color);
     text-transform: uppercase;
-    letter-spacing: 5.44px;
-    font-size: $section-title-size;
+    letter-spacing: 2.9px;
+    @media screen and(min-width: 576px) {
+      @include text($section-title-size, 700, $secondary-color);
+      letter-spacing: 5.44px;
+    }
   }
   &__inner {
     max-width: 550px;
     width: 100%;
-    margin: 33px auto 0;
+    margin: 0 auto;
+    @media screen and(min-width: 576px) {
+      margin: 33px auto 0;
+    }
   }
   &__item {
     text-align: center;
     &:not(:last-child) {
-      margin-bottom: 110px;
+      margin-bottom: 70px;
+      @media screen and(min-width: 576px) {
+        margin-bottom: 110px;
+      }
     }
   }
   &__icon {
-    @include size(91px);
-    width: 79px;
-    height: 84px;
-    margin-bottom: 32px;
+    width: 53px;
+    height: 56px;
+    margin-bottom: 21px;
+    @media screen and(min-width: 576px) {
+      width: 79px;
+      height: 84px;
+      margin-bottom: 32px;
+    }
   }
   &__item-header {
     @include text($item-title-size, 700, $secondary-color);
     letter-spacing: 3.2px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
+    @media screen and(min-width: 576px) {
+      margin-bottom: 25px;
+    }
   }
   &__item-text {
     @include text($secondary-text-size, 300, $secondary-color);

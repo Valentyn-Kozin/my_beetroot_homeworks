@@ -1,21 +1,17 @@
 $style: "gallery";
 .#{$style} {
   &__list {
-    @include flex(flex-start, stretch, row, wrap);
+    @include flex(flex-start, stretch, column);
+    @media screen and(min-width: 768px) {
+      @include flex(flex-start, stretch, row, wrap);
+    }
   }
   &__item {
-    width: 28.6%;
+    width: 100%;
     height: 237px;
-    margin: 0 10px 10px 0;
-    &:nth-child(3n + 3) {
-      margin-right: 0;
-    }
-    &:nth-child(n + 4) {
-      margin-bottom: 0;
-    }
-    &:nth-child(3n + 2) {
-      flex-grow: 1;
-    }
+    margin: 0 0 10px 0;
+    background: no-repeat center;
+    background-size: cover;
     &:nth-child(1) {
       background-image: url(../img/Topworkz.jpg);
     }
@@ -34,6 +30,29 @@ $style: "gallery";
     &:nth-child(6) {
       background-image: url(../img/kyiv.jpg);
     }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      max-width: calc(100% / 2 - 5px);
+      margin: 0 10px 10px 0;
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 5) {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      width: 28.6%;
+      margin: 0 10px 10px 0;
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 4) {
+        margin-bottom: 0;
+      }
+      &:nth-child(3n + 2) {
+        flex-grow: 1;
+      }
+    }
   }
   &__title-wrapper {
     height: 100%;
@@ -42,9 +61,13 @@ $style: "gallery";
   &__title {
     position: absolute;
     @include position(161px, 0, 0, 43px);
-    @include text($section-title-size, 700, $main-color);
-    letter-spacing: 5.44px;
+    @include text($section-title-size-mobile, 700, $main-color);
+    letter-spacing: 3.63px;
     text-transform: uppercase;
+    @media screen and(min-width: 576px) {
+      @include text($section-title-size, 700, $main-color);
+      letter-spacing: 5.44px;
+    }
   }
   @keyframes move-gallery {
     from {
@@ -55,6 +78,8 @@ $style: "gallery";
     }
   }
   &__item:hover &__title {
-    animation: move-gallery 1s alternate infinite;
+    @media screen and(min-width: 992px) {
+      animation: move-gallery 1s alternate infinite;
+    }
   }
 }
