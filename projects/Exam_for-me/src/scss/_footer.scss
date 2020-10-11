@@ -1,0 +1,43 @@
+$style: "footer";
+.#{$style} {
+  min-height: 268px;
+  background-color: $card-bg;
+  @include flex(center, center);
+  padding-top: 67px;
+  &__wrapper {
+    @include flex(flex-start, center, column);
+  }
+  &__link {
+    font-family: $josefin;
+    @include text($H240, 700, $white);
+    line-height: 1.08;
+    letter-spacing: 3.36px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-family: $josefin;
+    @include text($H60, 400, $white);
+    line-height: 1.63;
+    letter-spacing: 1.6px;
+    margin-bottom: 30px;
+  }
+  &__social-list {
+    @include flex(center, center);
+  }
+  &__social-item {
+    color: $white;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+    &:nth-child(3) {
+      color: $main-color;
+    }
+  }
+  &__social-link {
+    color: $white;
+    & + fa-linkedin-in {
+      color: $main-color;
+    }
+  }
+}

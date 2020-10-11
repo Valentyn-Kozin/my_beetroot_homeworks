@@ -1,0 +1,11 @@
+$style: "travel-with-us-right";
+.#{$style} {
+  background: url(../img/sea-bg-image.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  &__inner {
+    position: absolute;
+    right: 18%;
+    bottom: 14%;
+  }
+}

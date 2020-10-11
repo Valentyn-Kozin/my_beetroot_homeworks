@@ -1,0 +1,23 @@
+$style: "button";
+.#{$style} {
+  &__wrapper {
+    height: 60px;
+    width: 225px;
+    @include flex(center, center);
+    border: solid 2px transparent;
+    background-color: $main-color;
+    color: $white;
+    &:hover {
+      border-color: $main-color;
+      color: $main-color;
+      background-color: $white;
+    }
+  }
+  &__text {
+    font-family: $aleo;
+    font-size: $H60;
+    line-height: 1.63;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+}

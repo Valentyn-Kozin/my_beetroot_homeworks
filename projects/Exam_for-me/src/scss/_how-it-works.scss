@@ -1,0 +1,39 @@
+$style: "how-it-works";
+.#{$style} {
+  min-height: 337px;
+  background-color: $dark-grey;
+  @include flex(center, center);
+  position: relative;
+  &__list {
+    width: 81.5%;
+    @include flex(space-between, flex-start);
+  }
+  &__item {
+    width: 215px;
+    @include flex(flex-start, center, column);
+    &:nth-child(1) .#{$style}__icon {
+      fill: $main-color;
+    }
+    &:nth-child(2) .#{$style}__icon {
+      fill: #ff6363;
+    }
+    &:nth-child(3) .#{$style}__icon {
+      fill: #00a2ff;
+    }
+  }
+  &__icon {
+    @include size(60px);
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-family: $aleo;
+    @include text($H360, 400, $white);
+  }
+  //   &__arc {
+  //     position: absolute;
+  //     width: 58%;
+  //     top: 2%;
+  //     fill: $white;
+  //     border: solid 1px $white;
+  //   }
+}
