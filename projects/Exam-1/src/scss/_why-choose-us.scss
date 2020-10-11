@@ -1,0 +1,73 @@
+$style: "why-choose-us";
+.#{$style} {
+  min-height: 685px;
+  background: url(../img/why-choose-us-bg-image.jpg) center no-repeat;
+  background-size: cover;
+  @include flex(center, center);
+  &__container {
+    width: 81.5%;
+    @include flex(center, stretch);
+  }
+  &__col1 {
+    max-width: 530px;
+    width: 100%;
+  }
+  &__title {
+    font-family: $aleo;
+    @include text(H360, 400, $white);
+    line-height: 0.72;
+    margin-bottom: 62px;
+  }
+  &__inner {
+    @include flex(flex-start, stretch, column);
+    margin-bottom: $H480;
+  }
+  &__text {
+    font-family: $josefin;
+    @include text($H60, 400, $white);
+    line-height: 1.63;
+    letter-spacing: 1.6px;
+    margin-bottom: $H300;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link-wrapper {
+    height: 60px;
+    width: 225px;
+    @include flex(center, center);
+    border: solid 2px transparent;
+    background-color: $main-color;
+    color: $white;
+    &:hover {
+      border-color: $main-color;
+      color: $main-color;
+      background-color: $white;
+    }
+  }
+  &__link-text {
+    font-family: $aleo;
+    font-size: $H60;
+    line-height: 1.63;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+  &__col2 {
+    width: 475px;
+    position: relative;
+  }
+  &__img1 {
+    position: absolute;
+    width: 350px;
+    @include padding-hack(47%, contain);
+    margin-bottom: 5px;
+  }
+  &__img2 {
+    width: 350px;
+    @include padding-hack(47%, cover);
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+  }
+}
