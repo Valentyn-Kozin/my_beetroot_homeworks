@@ -1,0 +1,31 @@
+$style: "navigation";
+.#{$style} {
+  padding: 30px 0;
+  color: $white;
+  @include flex(center, center);
+  &__container {
+    width: 62.7%;
+    @include flex(space-between, center);
+  }
+  &__logo {
+    font-family: $josefin;
+    @include text($H240, 700, $white);
+    text-transform: uppercase;
+    line-height: 1.08;
+    letter-spacing: 2.4px;
+  }
+  &__list {
+    @include flex();
+  }
+  &__item {
+    margin-right: 42px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    font-family: $josefin;
+    @include text($H40, 400, $white);
+    text-transform: uppercase;
+  }
+}
