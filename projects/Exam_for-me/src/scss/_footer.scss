@@ -36,7 +36,8 @@ $style: "footer";
   }
   &__social-link {
     color: $white;
-    & + fa-linkedin-in {
+    transition: color 0.3s ease;
+    &:hover {
       color: $main-color;
     }
   }

@@ -34,6 +34,7 @@ $style: "header";
     flex-grow: 1;
     height: 60px;
     border: solid 2px $white;
+    @include text($H40, 400, $placeholder-color);
     &::placeholder {
       font-family: $josefin;
       text-align: center;
