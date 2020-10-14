@@ -2,9 +2,11 @@ $style: "travel-with-us";
 .#{$style} {
   min-height: 700px;
   padding: 100px 0;
+  @include flex(center, flex-start);
   &__container {
-    width: 81.5%;
-    margin: 0 auto;
+    position: relative;
+    // width: 81.5%;
+    // margin: 0 auto;
   }
   &__inner {
     max-width: 540px;
