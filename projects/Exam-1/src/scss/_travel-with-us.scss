@@ -1,0 +1,37 @@
+$style: "travel-with-us";
+.#{$style} {
+  min-height: 700px;
+  padding: 100px 0;
+  @include flex(center, flex-start);
+  &__container {
+    position: relative;
+    // width: 81.5%;
+    // margin: 0 auto;
+  }
+  &__inner {
+    max-width: 540px;
+    min-height: 371px;
+    opacity: 0.9;
+    background-color: $footer-bg;
+    padding: 50px 30px;
+  }
+  &__country {
+    font-family: $josefin;
+    @include text($H20, 400, $light-grey);
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+  }
+  &__name {
+    font-family: $josefin;
+    @include text($H200, 400, $white);
+    line-height: 1.3;
+    margin-bottom: 29px;
+  }
+  &__desc {
+    font-family: $josefin;
+    @include text($H60, 400, $light-grey);
+    line-height: 1.63;
+    margin-bottom: 48px;
+  }
+}

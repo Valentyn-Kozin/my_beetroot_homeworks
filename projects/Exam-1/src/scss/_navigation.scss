@@ -1,10 +1,8 @@
 $style: "navigation";
 .#{$style} {
-  padding: 30px 0;
   color: $white;
   @include flex(center, center);
   &__container {
-    width: 62.7%;
     @include flex(space-between, center);
   }
   &__logo {
@@ -15,14 +13,17 @@ $style: "navigation";
     letter-spacing: 2.4px;
   }
   &__list {
-    @include flex();
+    max-width: 525px;
+    width: 100%;
+    @include flex(space-between);
   }
   &__item {
-    margin-right: 42px;
-    &:last-child {
-      margin-right: 0;
+    @include transition(transform);
+    &:hover {
+      transform: scale(1.1);
     }
   }
+
   &__link {
     font-family: $josefin;
     @include text($H40, 400, $white);

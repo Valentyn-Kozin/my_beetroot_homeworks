@@ -17,34 +17,28 @@
         <h1 class="header__title">Bhromaon</h1>
         <h4 class="header__subtitle">Safe Travel Anywhere</h4>
         <form class="header__serch-form" action="#" method="get">
-          <div class="header__form-wrapper">
-            <label for="header__form-input"></label>
-            <input
-              class="header__form-input"
-              type="text"
-              id="header__form-input"
-              value="Search Your Travel Destination"
-            />
-            <button class="header__submit" type="submit">
-              <span class="header__submit-name">Search</span>
-              <svg class="header__search-icon">
-                <use xlink:href="./img/sprite.svg#search"></use>
-              </svg>
-            </button>
-          </div>
+          <input
+            class="header__form-input"
+            type="text"
+            value="Search Your Travel Destination"
+          />
+          <button class="header__submit" type="submit">
+            <span class="header__submit-name">Search</span>
+            <svg class="header__search-icon">
+              <use xlink:href="./img/sprite.svg#search"></use>
+            </svg>
+          </button>
         </form>
       </div>
-      <a href="#why-choose-us">
-        <div class="header__scroll">
-          <p class="header__scroll-name">Scroll Down</p>
-          <svg class="header__scroll-icon">
-            <use xlink:href="./img/sprite.svg#scroll"></use>
-          </svg>
-        </div>
+      <a class="header__scroll" href="#why-choose-us">
+        <p class="header__scroll-name">Scroll Down</p>
+        <svg class="header__scroll-icon">
+          <use xlink:href="./img/sprite.svg#scroll"></use>
+        </svg>
       </a>
       <nav class="header__navigation navigation">
-        <div class="navigation__container">
-          <a href="/" class="navigation__logo"><span>Bhromaon</span></a>
+        <div class="navigation__container container">
+          <a href="/" class="navigation__logo">Bhromaon</a>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#why-choose-us" class="navigation__link">Who We Are</a>
@@ -65,43 +59,179 @@
       </nav>
     </header>
 
-    <section class="why-choose-us" id="why-choose-us">
-      <div class="why-choose-us__container">
-        <div class="why-choose-us__col1">
-          <h2 class="why-choose-us__title">Why Choose Us</h2>
-          <div class="why-choose-us__inner">
-            <p class="why-choose-us__text">
-              Tion and dislike men who are so beguiled and demoralized by desire
-              by the charms of pleasure of the moment, so blinded by desire,
-              that they cannot foresee
-            </p>
-            <p class="why-choose-us__text">
-              Ddislike men who are so beguiled and demoralized by the charms of
-              pleasure of the moment, so blinded by desire, that.
-            </p>
-          </div>
-          <a href="#how-it-works" class="why-choose-us__link">
-            <div class="why-choose-us__link-wrapper">
-              <p class="why-choose-us__link-text">Explore Places</p>
+    <main>
+      <section class="why-choose-us" id="why-choose-us">
+        <div class="why-choose-us__container container">
+          <div class="why-choose-us__col1">
+            <h2 class="why-choose-us__title">Why Choose Us</h2>
+            <div class="why-choose-us__inner">
+              <p class="why-choose-us__text">
+                Tion and dislike men who are so beguiled and demoralized by
+                desire by the charms of pleasure of the moment, so blinded by
+                desire, that they cannot foresee
+              </p>
+              <p class="why-choose-us__text">
+                Ddislike men who are so beguiled and demoralized by the charms
+                of pleasure of the moment, so blinded by desire, that.
+              </p>
             </div>
-          </a>
-        </div>
-        <div class="why-choose-us__col2">
-          <div class="why-choose-us__img1">
-            <img src="./img/why-choose-us-image1.jpg" alt="something cool" />
+            <a href="#" class="why-choose-us__link button">
+              <div class="why-choose-us__link-wrapper button__wrapper">
+                <p class="why-choose-us__link-text button__text">
+                  Explore Places
+                </p>
+              </div>
+            </a>
           </div>
-          <div class="why-choose-us__img2">
+          <div class="why-choose-us__col2">
+            <div class="why-choose-us__img1">
+              <img src="./img/why-choose-us-image1.jpg" alt="something cool" />
+            </div>
+            <div class="why-choose-us__img2">
+              <img
+                src="./img/why-choose-us-image-2.jpg"
+                alt="something else cool"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <div class="how-it-works__container container">
+          <ul class="how-it-works__list">
+            <li class="how-it-works__item">
+              <div class="how-it-works__icon-wrapper">
+                <svg class="how-it-works__icon">
+                  <use xlink:href="./img/sprite.svg#search_places"></use>
+                </svg>
+              </div>
+              <h4 class="how-it-works__title">Search Places</h4>
+            </li>
+            <li class="how-it-works__item">
+              <div class="how-it-works__icon-wrapper">
+                <svg class="how-it-works__icon">
+                  <use xlink:href="./img/sprite.svg#select"></use>
+                </svg>
+              </div>
+              <h4 class="how-it-works__title">Select Places</h4>
+            </li>
+            <li class="how-it-works__item">
+              <div class="how-it-works__icon-wrapper">
+                <svg class="how-it-works__icon">
+                  <use xlink:href="./img/sprite.svg#book"></use>
+                </svg>
+              </div>
+              <h4 class="how-it-works__title">Book & Enjoy</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="travel-with-us travel-with-us-left" id="travel-with-us">
+        <div class="travel-with-us__container container">
+          <div class="travel-with-us__inner travel-with-us-left__inner">
+            <h6 class="travel-with-us__country">Spain</h6>
+            <h3 class="travel-with-us__name">Grand Spain Madrid</h3>
+            <p class="travel-with-us__desc">
+              But I must explain to you how all this mistaken idea of account to
+              denouncing pleasure and praising pain was account born and I
+              account will give you a complete account of the system
+            </p>
+            <a href="#" class="button">
+              <div class="button__wrapper">
+                <p class="button__text">Book Now</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="travel-with-us travel-with-us-right">
+        <div class="travel-with-us__container container">
+          <div class="travel-with-us__inner travel-with-us-right__inner">
+            <h6 class="travel-with-us__country">Spain</h6>
+            <h3 class="travel-with-us__name">Grand Spain Madrid</h3>
+            <p class="travel-with-us__desc">
+              But I must explain to you how all this mistaken idea of account to
+              denouncing pleasure and praising pain was account born and I
+              account will give you a complete account of the system
+            </p>
+            <a href="#" class="button">
+              <div class="button__wrapper">
+                <p class="button__text">Book Now</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h3 class="testimonials__title">What Our Tourist Say</h3>
+        <div class="testimonials__container container">
+          <div class="testimonials__img-wrapper">
             <img
-              src="./img/why-choose-us-image-2.jpg"
-              alt="something else cool"
+              src="./img/sam.jpg"
+              alt="Sam Sumon"
+              class="testimonials__img"
             />
           </div>
+          <div class="testimonials__desc">
+            <h4 class="testimonials__name">Sam Sumon</h4>
+
+            <p class="testimonials__text">
+              <svg class="testimonials__text-icon">
+                <use xlink:href="./img/sprite.svg#quot"></use>
+              </svg>
+              But I must explain to you how all this mistaken idea of account to
+              denouncinpleasure and praising pain But I must explain to you how
+              all this mistaken idea of account to nai denouncing pleasure and
+              praising pain was account born and I account will give you a
+              complete account of the system was account born and I account will
+              give you a nai the complete account of the system
+            </p>
+          </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__wrapper">
+        <a href="/" class="footer__link"><span>Bhromaon</span></a>
+        <p class="footer__subtitle">Safe Travel Anywhere</p>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" target="_blank"
+              ><i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" target="_blank">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <section class="how-it-works" id="how-it-works"></section>
-
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/213696a3d1.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>

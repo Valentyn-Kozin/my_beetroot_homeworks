@@ -1,0 +1,42 @@
+$style: "button";
+.#{$style} {
+  display: block;
+  padding: 0 5px;
+  height: 60px;
+  width: 225px;
+  @include flex(center, center);
+  border: solid 2px transparent;
+  background-color: $main-color;
+  opacity: 0.9;
+  overflow: hidden;
+  color: $white;
+  position: relative;
+  transition: all 0.3s ease;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 156px;
+    height: 90px;
+    background-color: $hover-btn;
+    z-index: -1;
+    left: -56px;
+    top: -10px;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    border-color: $main-color;
+    color: $main-color;
+    background-color: $white;
+    &::after {
+      background-color: $white;
+    }
+  }
+  &__text {
+    font-family: $aleo;
+    font-size: $H60;
+    line-height: 1.63;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+}

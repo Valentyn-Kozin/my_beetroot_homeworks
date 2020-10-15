@@ -1,0 +1,50 @@
+$style: "testimonials";
+.#{$style} {
+  min-height: 731px;
+  background: url(../img/sam-bg-image.jpg) center no-repeat;
+  background-size: cover;
+  padding: 120px 0 200px 0;
+  &__title {
+    font-family: $aleo;
+    @include text($H360, 400, $white);
+    line-height: 0.72;
+    margin-bottom: 96px;
+    text-align: center;
+  }
+  &__container {
+    max-width: 1110px;
+    margin: 0 auto;
+    @include flex();
+  }
+  &__img-wrapper {
+    max-width: 445px;
+    width: 100%;
+    @include padding-hack(28.5%, cover);
+  }
+  &__desc {
+    max-width: 665px;
+    width: 100%;
+    background-color: $dark-grey;
+    padding: 50px 57px;
+  }
+  &__name {
+    font-family: $josefin;
+    @include text($H200, 400, $testimonials-color);
+    margin-bottom: 33px;
+  }
+  &__text {
+    font-family: $josefin;
+    @include text($H60, 400, $light-grey);
+    line-height: 1.63;
+    text-indent: $H60;
+    position: relative;
+    margin-top: 0;
+  }
+  &__text-icon {
+    position: absolute;
+    left: 0;
+    top: -9px;
+    fill: $main-color;
+    @include size($H50);
+  }
+}

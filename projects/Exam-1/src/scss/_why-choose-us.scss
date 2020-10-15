@@ -5,12 +5,14 @@ $style: "why-choose-us";
   background-size: cover;
   @include flex(center, center);
   &__container {
-    width: 81.5%;
-    @include flex(center, flex-end);
+    // width: 81.5%;
+    @include flex(space-between, center);
   }
   &__col1 {
-    max-width: 530px;
-    width: 100%;
+    flex-basis: 50%;
+    padding-right: 10px;
+    // max-width: 530px;
+    // width: 100%;
   }
   &__title {
     font-family: $aleo;
@@ -32,44 +34,28 @@ $style: "why-choose-us";
       margin-bottom: 0;
     }
   }
-  &__link-wrapper {
-    height: 60px;
-    width: 225px;
-    @include flex(center, center);
-    border: solid 2px transparent;
-    background-color: $main-color;
-    color: $white;
-    &:hover {
-      border-color: $main-color;
-      color: $main-color;
-      background-color: $white;
-    }
-  }
-  &__link-text {
-    font-family: $aleo;
-    font-size: $H60;
-    line-height: 1.63;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-  }
   &__col2 {
-    max-width: 475px;
-    width: 100%;
+    flex-basis: 50%;
     height: 445px;
     position: relative;
+    padding-left: 10px;
   }
   &__img1 {
     position: absolute;
-    width: 350px;
-    @include padding-hack(47%, contain);
+    width: 100%;
+    max-height: 220px;
+    @include padding-hack(41.5%, contain);
     margin-bottom: 5px;
+    img {
+      object-position: left;
+    }
   }
   &__img2 {
-    width: 350px;
-    @include padding-hack(47%, cover);
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    transform: translate(-100%, -100%);
+    width: 100%;
+    max-height: 220px;
+    @include padding-hack(41.5%, contain);
+    img {
+      object-position: right;
+    }
   }
 }
