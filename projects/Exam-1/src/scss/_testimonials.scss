@@ -7,7 +7,7 @@ $style: "testimonials";
   &__title {
     font-family: $aleo;
     @include text($H360, 400, $white);
-    line-height: 0.72;
+    line-height: 0.92;
     margin-bottom: 96px;
     text-align: center;
   }
@@ -19,7 +19,7 @@ $style: "testimonials";
   &__img-wrapper {
     max-width: 445px;
     width: 100%;
-    @include padding-hack(28.5%, cover);
+    @include padding-hack(30%, cover);
   }
   &__desc {
     max-width: 665px;
