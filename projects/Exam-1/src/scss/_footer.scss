@@ -26,19 +26,17 @@ $style: "footer";
     @include flex(center, center);
   }
   &__social-item {
-    color: $white;
     &:not(:last-child) {
       margin-right: 24px;
-    }
-    &:nth-child(3) {
-      color: $main-color;
     }
   }
   &__social-link {
     color: $white;
     transition: color 0.3s ease;
-    &:hover {
-      color: $main-color;
+    @media screen and(min-width: 576px) {
+      &:hover {
+        color: $main-color;
+      }
     }
   }
 }

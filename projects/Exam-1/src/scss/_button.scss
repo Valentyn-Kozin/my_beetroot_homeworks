@@ -24,14 +24,17 @@ $style: "button";
     transform: rotate(45deg);
     transition: all 0.3s ease;
   }
-  &:hover {
-    border-color: $main-color;
-    color: $main-color;
-    background-color: $white;
-    &::after {
+  @media screen and(min-width: 576px) {
+    &:hover {
+      border-color: $main-color;
+      color: $main-color;
       background-color: $white;
+      &::after {
+        background-color: $white;
+      }
     }
   }
+
   &__text {
     font-family: $aleo;
     font-size: $H60;

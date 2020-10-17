@@ -6,11 +6,14 @@ $style: "navigation";
     @include flex(space-between, center);
   }
   &__logo {
-    font-family: $josefin;
-    @include text($H240, 700, $white);
-    text-transform: uppercase;
-    line-height: 1.08;
-    letter-spacing: 1.5px;
+    display: none;
+    @media screen and(min-width: 576px) {
+      font-family: $josefin;
+      @include text($H240, 700, $white);
+      text-transform: uppercase;
+      line-height: 1.08;
+      letter-spacing: 1.5px;
+    }
   }
   &__list {
     max-width: 525px;
@@ -18,15 +21,21 @@ $style: "navigation";
     @include flex(space-between);
   }
   &__item {
-    @include transition(transform);
-    &:hover {
-      transform: scale(1.1);
+    text-align: center;
+    @media screen and(min-width: 576px) {
+      @include transition(transform);
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
   &__link {
     font-family: $josefin;
-    @include text($H40, 400, $white);
+    @include text($H20, 400, $white);
     text-transform: uppercase;
+    @media screen and(min-width: 576px) {
+      size: $H40;
+    }
   }
 }

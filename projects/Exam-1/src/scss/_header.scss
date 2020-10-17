@@ -26,13 +26,14 @@ $style: "header";
   }
   &__serch-form {
     @include flex(center, center);
-    width: 650px;
+    max-width: 650px;
+    width: 100%;
   }
   &__form-input {
     text-align: center;
     font-family: $josefin;
     display: flex;
-    padding: 0 5px;
+    padding: 0 8px;
     flex-grow: 1;
     height: 60px;
     border: solid 2px $white;
@@ -41,6 +42,9 @@ $style: "header";
     &:focus {
       border: solid 2px $main-color;
       outline: none;
+    }
+    @media screen and(min-width: 576px) {
+      padding: 0 5px;
     }
   }
   &__submit {

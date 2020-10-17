@@ -2,7 +2,7 @@ $style: "travel-with-us-left";
 .#{$style} {
   background: url(../img/hotel-bg-image.jpg) center no-repeat;
   background-size: cover;
-  position: relative;
+  //   position: relative;
   &__inner {
     position: absolute;
     left: 15px;

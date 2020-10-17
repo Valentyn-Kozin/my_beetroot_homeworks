@@ -5,37 +5,62 @@ $style: "why-choose-us";
   background-size: cover;
   @include flex(center, center);
   &__container {
-    @include flex(space-between, center);
+    @include flex(space-between, center, column-reverse);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @media screen and(min-width: 576px) {
+      @include flex(space-between, center);
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
   &__col1 {
-    flex-basis: 50%;
-    padding-right: 10px;
+    @media screen and(min-width: 576px) {
+      flex-basis: 50%;
+      padding-right: 10px;
+    }
   }
   &__title {
     font-family: $aleo;
-    @include text($H360, 400, $white);
+    @include text($H240, 400, $white);
     line-height: 0.72;
-    margin-bottom: 62px;
+    margin-bottom: $H240;
+    @media screen and(min-width: 576px) {
+      size: $H360;
+      margin-bottom: 62px;
+    }
   }
   &__inner {
     @include flex(flex-start, stretch, column);
-    margin-bottom: 42px;
+    margin-bottom: $H240;
+    @media screen and(min-width: 576px) {
+      margin-bottom: 42px;
+    }
   }
   &__text {
     font-family: $josefin;
-    @include text($H60, 400, $white);
+    @include text($H60, 300, $white);
     line-height: 1.63;
     letter-spacing: 1.6px;
-    margin-bottom: 25px;
+    margin-bottom: $H60;
     &:last-child {
       margin-bottom: 0;
     }
+    @media screen and(min-width: 576px) {
+      margin-bottom: 25px;
+    }
   }
   &__col2 {
-    flex-basis: 50%;
-    height: 445px;
+    width: 100%;
+    // padding: 2rem 0;
+    margin-bottom: 2rem;
     position: relative;
-    padding-left: 10px;
+    @media screen and(min-width: 576px) {
+      flex-basis: 50%;
+      padding: 0 0 0 10px;
+      height: 445px;
+      margin-bottom: 0;
+    }
   }
   &__img1 {
     position: absolute;
