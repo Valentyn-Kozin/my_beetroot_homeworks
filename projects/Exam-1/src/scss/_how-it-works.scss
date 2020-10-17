@@ -19,9 +19,9 @@ $style: "how-it-works";
   }
   &__list {
     @include flex(space-between, flex-start);
+    padding: 0 40px;
   }
   &__item {
-    // width: 215px;
     @include flex(flex-start, center, column);
     &:nth-child(1) .#{$style}__icon {
       fill: $main-color;
@@ -37,7 +37,7 @@ $style: "how-it-works";
     @include size(96px);
     background-color: $dark-grey;
     @include flex(center, center);
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     z-index: 2;
   }
   &__icon {

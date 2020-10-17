@@ -13,16 +13,16 @@ $style: "header";
     @include text($H480, 700, $white);
     font-family: $josefin;
     line-height: 0.82;
-    letter-spacing: 4.8px;
+    letter-spacing: 2.7px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
   }
   &__subtitle {
     @include text($H220, 400, $white);
     font-family: $josefin;
     line-height: 1.18;
-    letter-spacing: 5.82px;
-    margin-bottom: 50px;
+    letter-spacing: 5.4px;
+    margin-bottom: 45px;
   }
   &__serch-form {
     @include flex(center, center);
@@ -37,6 +37,7 @@ $style: "header";
     height: 60px;
     border: solid 2px $white;
     @include text($H40, 400, $placeholder-color);
+    letter-spacing: 1.8px;
     &:focus {
       border: solid 2px $main-color;
       outline: none;

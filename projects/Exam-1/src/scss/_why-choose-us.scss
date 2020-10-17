@@ -5,31 +5,28 @@ $style: "why-choose-us";
   background-size: cover;
   @include flex(center, center);
   &__container {
-    // width: 81.5%;
     @include flex(space-between, center);
   }
   &__col1 {
     flex-basis: 50%;
     padding-right: 10px;
-    // max-width: 530px;
-    // width: 100%;
   }
   &__title {
     font-family: $aleo;
-    @include text(H360, 400, $white);
+    @include text($H360, 400, $white);
     line-height: 0.72;
     margin-bottom: 62px;
   }
   &__inner {
     @include flex(flex-start, stretch, column);
-    margin-bottom: $H480;
+    margin-bottom: 42px;
   }
   &__text {
     font-family: $josefin;
     @include text($H60, 400, $white);
     line-height: 1.63;
     letter-spacing: 1.6px;
-    margin-bottom: $H300;
+    margin-bottom: 25px;
     &:last-child {
       margin-bottom: 0;
     }

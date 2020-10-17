@@ -25,18 +25,19 @@ $style: "testimonials";
     max-width: 665px;
     width: 100%;
     background-color: $dark-grey;
-    padding: 50px 57px;
+    padding: 51px 57px;
   }
   &__name {
     font-family: $josefin;
     @include text($H200, 400, $testimonials-color);
-    margin-bottom: 33px;
+    margin-bottom: 42px;
+    text-transform: uppercase;
   }
   &__text {
     font-family: $josefin;
-    @include text($H60, 400, $light-grey);
+    @include text($H60, 300, $light-grey);
     line-height: 1.63;
-    text-indent: $H60;
+    text-indent: $H300;
     position: relative;
     margin-top: 0;
   }

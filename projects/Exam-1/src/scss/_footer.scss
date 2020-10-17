@@ -3,7 +3,7 @@ $style: "footer";
   min-height: 268px;
   background-color: $card-bg;
   @include flex(center, center);
-  padding-top: 67px;
+  padding-top: 73px;
   &__wrapper {
     @include flex(flex-start, center, column);
   }
@@ -11,16 +11,16 @@ $style: "footer";
     font-family: $josefin;
     @include text($H240, 700, $white);
     line-height: 1.08;
-    letter-spacing: 3.36px;
-    margin-bottom: 15px;
+    letter-spacing: 2.4px;
+    margin-bottom: 7px;
     text-transform: uppercase;
   }
   &__subtitle {
     font-family: $josefin;
-    @include text($H60, 400, $white);
+    @include text($H60, 300, $white);
     line-height: 1.63;
-    letter-spacing: 1.6px;
-    margin-bottom: 30px;
+    letter-spacing: 0.6px;
+    margin-bottom: 21px;
   }
   &__social-list {
     @include flex(center, center);
