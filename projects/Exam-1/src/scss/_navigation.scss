@@ -6,7 +6,9 @@ $style: "navigation";
     @include flex(space-between, center);
   }
   &__logo {
-    display: none;
+    @media screen and(max-width: 575px) {
+      display: none;
+    }
     @media screen and(min-width: 576px) {
       font-family: $josefin;
       @include text($H240, 700, $white);
