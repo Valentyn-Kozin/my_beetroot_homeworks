@@ -37,7 +37,7 @@ $style: "contact-us";
       margin-bottom: 38px;
     }
   }
-  &__link-wrapper {
+  &__link {
     max-width: 395px;
     width: 100%;
     height: 58px;
@@ -52,15 +52,9 @@ $style: "contact-us";
         color: $secondary-color;
       }
     }
-  }
-  &__link-text {
-    padding: 0 112px;
     text-transform: uppercase;
     letter-spacing: 2.56px;
     font-size: $main-text-size;
     font-weight: 400;
-    @media screen and(min-width: 576px) {
-      padding: 0 134px;
-    }
   }
 }
